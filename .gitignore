@@ -1,0 +1,8 @@
+workspace/
+*.pyc
+__pycache__/
+.env
+bridge.db
+*.log
+.venv/
+venv/
