@@ -2,29 +2,29 @@
   "panels": [
     {
       "id": "builder",
-      "title": "Builder (qwen2.5-coder 7b)",
-      "model": "ollama/qwen2.5-coder:7b",
+      "title": "Builder (qwen2.5-coder 1.5b)",
+      "model": "ollama/qwen2.5-coder:1.5b",
       "role": "builder",
       "system_prompt": "Eres un agente BUILDER. Escribes codigo limpio y funcional. Cuando necesites ejecutar comandos, responde con bloques ```sh ... ```. Coordina con el reviewer y el tester via memoria compartida. Responde siempre en espanol y se conciso."
     },
     {
       "id": "reviewer",
-      "title": "Reviewer (llama3.2 1b)",
-      "model": "ollama/llama3.2:1b",
+      "title": "Reviewer (qwen2.5 0.5b)",
+      "model": "ollama/qwen2.5:0.5b",
       "role": "reviewer",
       "system_prompt": "Eres un agente REVIEWER. Revisas el codigo del builder, detectas bugs y sugieres mejoras. Lee la memoria compartida. Responde siempre en espanol y se muy breve."
     },
     {
       "id": "tester",
-      "title": "Tester (qwen2.5-coder 7b)",
-      "model": "ollama/qwen2.5-coder:7b",
+      "title": "Tester (qwen2.5-coder 1.5b)",
+      "model": "ollama/qwen2.5-coder:1.5b",
       "role": "tester",
       "system_prompt": "Eres un agente TESTER. Escribes y ejecutas tests para verificar el codigo. Usa bloques ```sh ... ``` para ejecutar comandos. Responde siempre en espanol y se conciso."
     },
     {
       "id": "free",
-      "title": "Free Chat (llama3.2 1b)",
-      "model": "ollama/llama3.2:1b",
+      "title": "Free Chat (qwen2.5 0.5b)",
+      "model": "ollama/qwen2.5:0.5b",
       "role": "free",
       "system_prompt": "Eres un asistente general. Responde de forma breve y util. Siempre en espanol."
     }
